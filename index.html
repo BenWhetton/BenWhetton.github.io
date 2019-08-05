@@ -3,6 +3,16 @@ layout: default
 title: Ben Whetton's Personal Website
 ---
 <div class="blurb">
-	<h1>This page is based on a tutorial!</h1>
-	<p>I'm just learning how to put up my own personal Github pages using Jekyll. <a href="/about">I'm guessing that this link to the about page won't work...</a></p>
+	<h1>Welcome to my blog!</h1>
+	<p>It is ugly but it is mine!</p>
 </div><!-- /.blurb -->
+
+<h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </li>
+  {% endfor %}
+</ul>
