@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Integrating GTest with Catkin `tests` and `run_tests` convenience targets"
+date: 2019-08-05
 ---
 
 ## Intro
